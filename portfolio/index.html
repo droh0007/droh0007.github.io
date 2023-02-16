@@ -5,8 +5,116 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="wrapper">
+    <header>
+        <div class="site-title">
+        <h1>Kate's Magical Confectionary</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="orders.html">Orders</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <section>
+        <h2>Celebrating our 10<sup>th</sup> year of operation!</h2>
+        <img 
+        id="main-cake"
+        src="images/cake.jpg" 
+        alt="cake with sprinkles">
+    </section>
+    <section>
+        <h2>Links</h2>
+        <p>Search the web on <a href="http://google.ca"
+        target="_blank">Google</a></p>
+    </section>
+    <section>
+    <h2>Info</h2>
+    <div class="container">
+    <table class="table-info">
+        <caption>Staff</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Specialty</th>
+                <th>Experience</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Kate</td>
+                <td>Cakes</td>
+                <td>4 Years</td>
+            </tr>
+            <tr>
+                <td>Kosmo</td>
+                <td>Bisscuts</td>
+                <td>3 Years</td>
+            </tr>
+            <tr>
+                <td>Graham</td>
+                <td>Bread</td>
+                <td>2 Years</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+</section>
+<section>
+    <h2>Forms</h2>
+    <form action="order.html" metod="get">
+<div>
+    <label for="fname">First Name</label>
+    <input id="fname" name="firstname"
+    type="text">
+</div>
+<div>
+    <label for="comments">Comments</label>
+    <textarea id="comments" name="comments"></textarea>
+</div>
+<div>
+    <label for="flavour">Flavour</label>
+    <select id="flavour" name="flavour">
+    <option value="van">Vanilla</option>
+    <option value="choc">Chocolate</option>
+    <option value="lem">Lemon</option>
+    <option value="straw">Strawberry</option>
+</select>
+</div>
+<div>
+    <h3>What add ons would you like?</h3>
+    <label for="sprinkles">Sprinkles</label>
+    <input type="checkbox" id="sprinkles" name="sprnk">
+
+    <label for="candles">Candles</label>
+    <input type="checkbox" id="candles" name="can">
+
+    <label for="spark">Sparklers</label>
+    <input type="checkbox" id="spark" name="sprk">
+</div>
+<div>
+    <h3>Would you like a reply?</h3>
+    <label for="no">No</label>
+    <input type="radio" id="no" name="reply" value="no">
+
+    <label for="yes">Yes</label>
+    <input type="radio" id="yes" name="reply" value="yes">
+</div>
+<div>
+    <button type="submit">SEND</button>
+</div>
+    </form>
+</section>
+</main>
+    </div>
+    <footer>
+        <address>123 Baker Street, Phone Number 555-555-5555</address>
+        <p>&copy; Copyright 2023</p>
+    </footer>
 </body>
 </html>

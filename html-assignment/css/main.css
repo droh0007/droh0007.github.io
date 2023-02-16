@@ -1,0 +1,28 @@
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    }
+    
+header, footer {
+    background-color: #37a9bf;
+    }
+    
+.site-title {
+    color: #04407d;
+}
+
+img {
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+  }
+
+#my-image {
+    box-shadow: 0px 0px 2px 1px black;
+}
+
+ul.hobbies {
+    list-style-type: square;
+  }
+
+/*Replace the bullets from the list of hobbies with squares style="list-style-type:square"*/

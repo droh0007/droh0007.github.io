@@ -21,8 +21,23 @@ img {
     box-shadow: 0px 0px 2px 1px black;
 }
 
-ul.hobbies {
+ul.b {
     list-style-type: square;
+}
+
+ul.b :nth-child(odd) {
+    background-color: lightcoral;
+}
+
+ul.nav-bar {
+    list-style: none;
+}
+
+a:link {
+    text-decoration: none;
   }
 
-/*Replace the bullets from the list of hobbies with squares style="list-style-type:square"*/
+  a:hover {
+    background-color: lightcoral;
+  }
+    

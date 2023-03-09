@@ -1,24 +1,105 @@
+/* sets font and main site colour */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #aad4cf;
+    font-size: 1rem;
 }
 
+/*makes the inner section more responsive */
 .wrapper {
-    width: 80%;
+    width: 50%;
     margin: auto;
     background-color: #D4E9E7;
 }
 
+/* The banner text is now white, centered, fixed in place, with specifed spacing and size */ 
+h1 {
+    color: white;
+    position: absolute; 
+    text-align: center;
+    width: 50%;
+    top: 2.6em;
+    font-size: 3em;
+    font-weight: lighter;
+}
+
+h2 {
+    padding-left: .5em;
+}
+
+h3 {
+    padding-left: .5em;
+}
+
+p {
+    padding-left: 1em;
+}
+/* This image now has a set width and the paragraph that follows will float left */
+#lone-starfish {
+    width: 200px;
+    float: left;
+    padding-left: 10px;
+}
+/* Sets banner photo to take up 100% off wrapper */
+#lone-starfish-wide {
+    width: 100%;
+}
+
+/* there is now a outline around the contact forum with spacing */
 .forum {
     outline-style: solid;
     outline-width: thin;
+    padding: 20px;
+    margin: 10px;
+}
+.display li {
+   /* float: left; */
+    display: inline-block;
+    margin-right: 300px;
+    border-right: 1px solid grey;
+    padding-left: 150px;
+    display: flex;
+    /* add padding and height
+    padding: ;
+    height: ;
+    */
+  }
+
+  nav ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
 }
 
-.content {
-
+footer {
+    text-align: right;
 }
 
-img {
-    width: 200px;
+/*
+a {
+    display: block;
+    padding: 8px;
+  }
+
+  .clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+*/
+
+/*
+li {
     float: left;
+  }
+  
+  a {
+    display: block;
+    padding: 8px;
+  }
+
+  .clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
 }

@@ -2,7 +2,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #aad4cf;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 /*makes the inner section more responsive */
@@ -24,21 +24,24 @@ h1 {
 }
 
 h2 {
-    padding-left: .5em;
+    padding-left: .75em;
 }
 
 h3 {
-    padding-left: .5em;
+    padding-left: .75em;
 }
 
 p {
     padding-left: 1em;
+    padding-right: 1em;
 }
 /* This image now has a set width and the paragraph that follows will float left */
 #lone-starfish {
-    width: 200px;
+    width: 185px;
     float: left;
-    padding-left: 10px;
+    padding-left: .75em;
+    padding-right: 0.75em;
+    padding-bottom: 0.75em;
 }
 /* Sets banner photo to take up 100% off wrapper */
 #lone-starfish-wide {
@@ -46,30 +49,37 @@ p {
 }
 
 /* there is now a outline around the contact forum with spacing */
-.forum {
+.form {
     outline-style: solid;
     outline-width: thin;
-    padding: 20px;
-    margin: 10px;
+    padding: 1.5em;
+    margin: 0.75em;
 }
+
+/*adding style and spacing to nav items */
 .display li {
-   /* float: left; */
     display: inline-block;
-    margin-right: 300px;
+
     border-right: 1px solid grey;
-    padding-left: 150px;
+    padding-right: 13%;
+    padding-left: 13%;
     display: flex;
-    /* add padding and height
-    padding: ;
-    height: ;
-    */
+
   }
 
   nav ul {
     list-style: none;
     padding-left: 0;
+    margin-top: 0%;
     display: flex;
+    font-size: 1rem;
 }
+
+/*removes underline from link and makes it black instead of blue */
+a:link {
+    text-decoration: none;
+    color: black;
+  }
 
 footer {
     text-align: right;

@@ -18,10 +18,11 @@ h1 {
     position: absolute; 
     text-align: center;
     width: 50%;
-    top: 2.6em;
+    top: 150px;
     font-size: 3em;
     font-weight: lighter;
 }
+
 
 h2 {
     padding-left: .75em;
@@ -29,6 +30,10 @@ h2 {
 
 h3 {
     padding-left: .75em;
+}
+
+h4 {
+    font-weight: lighter;
 }
 
 p {
@@ -56,23 +61,24 @@ p {
     margin: 0.75em;
 }
 
-/*adding style and spacing to nav items */
-.display li {
-    display: inline-block;
-
-    border-right: 1px solid grey;
-    padding-right: 13%;
-    padding-left: 13%;
-    display: flex;
-
-  }
-
-  nav ul {
+nav ul {
     list-style: none;
-    padding-left: 0;
-    margin-top: 0%;
+    width: 100%;
     display: flex;
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+    font-weight: 600;
     font-size: 1rem;
+    color: black;
+}
+
+nav li {
+    width: inherit;
+}
+
+nav li:not(:last-child) {
+    border-right: 1px solid black;
 }
 
 /*removes underline from link and makes it black instead of blue */
@@ -81,35 +87,38 @@ a:link {
     color: black;
   }
 
+  /*makes visted links black */
+  a:visited {
+    color: black;
+  }
+
+  #urname {
+    width: 94%;
+    margin-top: 0.5em;
+    margin-bottom: 0.75em;
+  }
+
+  #email {
+    width: 94%;
+    margin-top: 0.5em;
+    margin-bottom: 0.75em;
+  }
+
+  #urmessage {
+    width: 94%;
+    height: 4rem;
+    margin-top: 0.5em;
+  }
+
+  button {
+    background-color: #D4E9E7;
+    font-size: 0.5rem;
+    padding: 1em;
+    margin-top: 1em;
+    border-style: solid;
+    border-width: 1px;
+  }
+
 footer {
     text-align: right;
-}
-
-/*
-a {
-    display: block;
-    padding: 8px;
-  }
-
-  .clearfix::after{
-    content: "";
-    display: block;
-    clear: both;
-}
-*/
-
-/*
-li {
-    float: left;
-  }
-  
-  a {
-    display: block;
-    padding: 8px;
-  }
-
-  .clearfix::after{
-    content: "";
-    display: block;
-    clear: both;
 }

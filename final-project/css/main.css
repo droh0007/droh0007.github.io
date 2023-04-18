@@ -60,6 +60,7 @@ body {
     font-family: sans-serif;
     margin: auto;
     width: 90%;
+	font-size: 18px;
 }
 
 nav {
@@ -70,6 +71,17 @@ nav {
 /*removes style of nav ul*/
 nav ul {
 	list-style: none;
+}
+
+/* adds spacing between list items */
+nav li {
+	padding: 15px;
+}
+
+/* changes how tall the search icon box, colour of icon */
+.fa-magnifying-glass {
+	height: 20px;
+	color: #c78c06;
 }
 
 /*removeds underline from nav, chaned all link colours to mustard, black home still needed*/
@@ -97,8 +109,26 @@ a:link {
 
 /* not working yet, have to set rem? */
 h2 {
-	font-size: 1rem;
+	font-size: 50px;
+	font-weight: bold;
 }
 
+h3 {
+	font-size: 35px;
+	font-weight: bold;
+}
+
+/*theres now and outline and spacing on hours of operation sizing will be changed*/
+.hours {
+    outline-style: solid;
+    outline-width: thin;
+    padding: 1.5em;
+    margin: 0.75em;
+}
+
+/*not targeting the first?? */
+.table-info div:nth-child(1) {
+	background: red;
+  }
 
 

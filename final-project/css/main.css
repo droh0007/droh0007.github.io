@@ -60,7 +60,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: auto;
     width: 90%;
-	font-size: 18px;
+	font-size: 15px;
 }
 
 nav {
@@ -126,10 +126,11 @@ h3 {
 }
 
 h4 {
-	font-size: 20px;
+	font-size: 17px;
 	font-weight: bold;
 	padding: 10px;
 	padding-left: 0;
+	color: black;
 }
 
 .container-welcome {
@@ -208,6 +209,16 @@ padding: 15px;
 	margin-bottom: 15px;
   }
 
+  /*creates underline and padding for our team section*/
+  div.ceo , div.cfo {
+	border-bottom:2px solid #c78c06; 
+	width:98%; 
+	}
+
+	.wrapper-john p , .wrapper-bob p {
+		padding-top: 10px;
+	}
+  
   /* adds style only to the final send button */
   #send {
 	background-color: black;
@@ -228,9 +239,45 @@ padding: 15px;
     margin: 0.75em;
 }
 
-/*not targeting the first?? */
-.table-info div:nth-child(1) {
-	background: red;
+/* trying to even out cells, not working */
+.table-info {
+	margin-left: auto;
+	margin-right: auto;
   }
+
+  /*more in my effort to even out cells not working*/
+table {
+	width: 100%;
+	border-spacing: 20px
+}
+
+/* alighns adds border and colour to the top of the table*/
+th {
+	text-align: center;
+	padding:10px;
+	background-color: #ffe6ac;
+	border: 1px solid;
+  }
+
+  /*aligns to left adds border and spcaing*/
+  td {
+	text-align: left;
+	padding:10px;
+	border: 1px solid;
+  }
+
+  /*sets colour, background, and spacing of footer*/
+  footer {
+	background-color: black;
+	color: #c78c06;
+	padding: 20px;
+	padding-left: 10px;
+  }
+
+  /*adds spacing between p*/
+  footer p {
+	padding: 10px;
+  }
+
 
 

@@ -151,6 +151,12 @@ h3 {
 	width: 170px;
   }
 
+  /* lets me customize the play icon, needs to be beside, first needs to be orange */
+  .fa-play {
+    color: white;
+    font-size: 1.3rem;
+}
+
   /* style for most of the buttons */
   #digital-plans , #marketing-plans , #video-plans , #web-plans , #print-plans {
 	background-color: black;

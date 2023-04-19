@@ -57,7 +57,7 @@ table {
 }
 /* change font */
 body {
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: auto;
     width: 90%;
 	font-size: 18px;
@@ -112,15 +112,17 @@ a:link {
 	margin: 10px;
 }
 
-/* not working yet, have to set rem? */
+/* not working yet, have to set rem? stil not bold enough*/
 h2 {
 	font-size: 50px;
 	font-weight: bold;
+	padding: 30px;
 }
 
 h3 {
 	font-size: 35px;
 	font-weight: bold;
+	padding: 20px;
 }
 
 .container-welcome {
@@ -151,11 +153,25 @@ h3 {
 	width: 170px;
   }
 
-  /* lets me customize the play icon, needs to be beside, first needs to be orange */
+  /* lets me customize the play icon, needs to be beside, first needs to be orange, display inline-block dosen't work */
   .fa-play {
     color: white;
     font-size: 1.3rem;
 }
+
+/*adds light yellow to about us and padding */
+.wrapper-about-us {
+background-color: #ffe6ac;
+padding: 15px;
+}
+
+/*adds colour and spacing to most wrappers */
+.wrapper-digital , .wrapper-marketing , .wrapper-video , .wrapper-web , .wrapper-print , .wrapper-john , .wrapper-bob {
+	background-color: #ffe6ac;
+	padding: 15px;
+	margin-bottom: 15px;
+	}
+
 
   /* style for most of the buttons */
   #digital-plans , #marketing-plans , #video-plans , #web-plans , #print-plans {
@@ -167,6 +183,7 @@ h3 {
 	font-weight: 600;
 	border: none;
 	width: 150px;
+	margin-bottom: 15px;
   }
 
   /* style just for the learn more button, border not working yet */
@@ -181,6 +198,7 @@ h3 {
 	border: solid;
 	border-width: 1px;
 	width: 150px;
+	margin-bottom: 15px;
   }
 
   /* adds style only to the final send button */
@@ -192,6 +210,7 @@ h3 {
 	font-weight: 600;
 	border: none;
 	width: 70px;
+	margin-top: 20px;
   }
 
 /*theres now and outline and spacing on hours of operation sizing will be changed*/

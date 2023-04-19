@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final</title>
     <script src="https://kit.fontawesome.com/09e7dcfaf1.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
@@ -47,78 +52,75 @@
                 </div>
 
                 <!--About us needs a div with class bleed 2-->
-                <img id="about-us"
-                src="images/about-us.jpg"
-                alt="pingpong table">
-                <h2 id="about">About Us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt facere earum sapiente facilis repellendus iure nobis autem ad voluptatum error? Rerum modi sed cumque laboriosam sit! Quam tenetur dolorum accusantium!</p>
-                <p>Ex similique facilis corporis perferendis pariatur blanditiis eaque, accusamus, enim quae ipsum ducimus, reiciendis labore nisi eos! Iste nulla incidunt quam, officia placeat nemo? Beatae, sed ipsum! Impedit, molestias natus.</p>
+                <div class="wrapper-about-us">
+                    <img id="about-us"
+                    src="images/about-us.jpg"
+                    alt="pingpong table">
+                    <h2 id="about">About Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt facere earum sapiente facilis repellendus iure nobis autem ad voluptatum error? Rerum modi sed cumque laboriosam sit! Quam tenetur dolorum accusantium!</p>
+                    <p>Ex similique facilis corporis perferendis pariatur blanditiis eaque, accusamus, enim quae ipsum ducimus, reiciendis labore nisi eos! Iste nulla incidunt quam, officia placeat nemo? Beatae, sed ipsum! Impedit, molestias natus.</p>
+                </div>
 
-                <!--articles may be redundant-->
-                <div class="wrapper">
-                    <section class="services">
-                        <article>
-                            <h2 id="services">Our Services</h2>
-                            <img id="digital"
-                            src="images/digital.jpg"
-                            alt="person using a laptopn and phone">
-                            <h3>Digital Transformation</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, aut iure, enim ullam ad ratione ab sequi quia ipsam eveniet quidem, nemo expedita nihil obcaecati laboriosam adipisci aspernatur voluptatibus odit.</p>
-                                <div>
-                                    <button id="digital-plans" type="submit">Digital PLans 
-                                    <i class="fa-sharp fa-solid fa-play"></i></button>
-                                </div>
-                        </article>
+                    <h2 id="services">Our Services</h2>
+                    <img id="digital"
+                    src="images/digital.jpg"
+                    alt="person using a laptopn and phone">
+                    <div class="wrapper-digital">
+                        <h3>Digital Transformation</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, aut iure, enim ullam ad ratione ab sequi quia ipsam eveniet quidem, nemo expedita nihil obcaecati laboriosam adipisci aspernatur voluptatibus odit.</p>
+                            <div>
+                                <button id="digital-plans" type="submit">Digital PLans 
+                                <i class="fa-sharp fa-solid fa-play"></i></button>
+                            </div>
+                    </div>
 
-                        <article>
-                            <img id="marketing"
-                            src="images/marketing.jpg"
-                            alt="open laptop">
-                            <h3>Marketing</h3>
+                    <img id="marketing"
+                    src="images/marketing.jpg"
+                    alt="open laptop">
+                    <div class="wrapper-marketing">
+                        <h3>Marketing</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione vero dolores officia maiores, quasi similique delectus voluptate inventore repudiandae provident nulla. Architecto deserunt officia vero modi placeat fugiat dolore? Aspernatur.</p>
                                 <div>
                                     <button id="marketing-plans" type="submit">Marketing Plans 
                                     <i class="fa-sharp fa-solid fa-play"></i></button>
                                 </div>
-                        </article>
+                    </div>
                     
-                        <article>
-                            <img id="video"
-                            src="images/video.jpg"
-                            alt="cellphone with youtube icon">
-                            <h3>Video Produaction</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, id inventore voluptatum possimus hic, repellendus soluta iste excepturi accusamus, in eligendi numquam deserunt non voluptate nostrum quia delectus aspernatur unde.</p>
-                                <div>
-                                    <button id="video-plans" type="submit">Video Plans 
-                                    <i class="fa-sharp fa-solid fa-play"></i></button>
-                                </div>
-                        </article> 
-                    
-                        <article>
-                            <img id="web"
-                            src="images/web.jpg"
-                            alt="cellohone on open notepad with pen">
-                            <h3>Web Development</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, ratione eum molestias maiores, quaerat deleniti vero ea dolore sint porro beatae itaque dolor, iure architecto error blanditiis ex labore ut?</p>
-                                <div>
-                                    <button id="web-plans" type="submit">Web Plans 
-                                    <i class="fa-sharp fa-solid fa-play"></i></button>
-                                </div>
-                        </article>   
+                    <img id="video"
+                    src="images/video.jpg"
+                    alt="cellphone with youtube icon">
+                    <div class="wrapper-video">
+                        <h3>Video Produaction</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, id inventore voluptatum possimus hic, repellendus soluta iste excepturi accusamus, in eligendi numquam deserunt non voluptate nostrum quia delectus aspernatur unde.</p>
+                            <div>
+                                <button id="video-plans" type="submit">Video Plans 
+                                <i class="fa-sharp fa-solid fa-play"></i></button>
+                            </div>
+                    </div> 
+                
+                    <img id="web"
+                    src="images/web.jpg"
+                    alt="cellohone on open notepad with pen">
+                    <div class="wrapper-web">
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, ratione eum molestias maiores, quaerat deleniti vero ea dolore sint porro beatae itaque dolor, iure architecto error blanditiis ex labore ut?</p>
+                            <div>
+                                <button id="web-plans" type="submit">Web Plans 
+                                <i class="fa-sharp fa-solid fa-play"></i></button>
+                            </div>
+                    </div>   
 
-                        <article>
-                            <img id="print"
-                            src="images/print.jpg"
-                            alt="line of newsracks on street">
-                            <h3>Print</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis vel repudiandae quos odit dolores in optio cumque, incidunt dolorem consectetur repellat voluptates debitis fugiat numquam sint architecto amet libero ab.</p>
-                                <div>
-                                    <button id="print-plans" type="submit">Print Plans 
-                                    <i class="fa-sharp fa-solid fa-play"></i></button>
-                                </div>
-                        </article>        
-                    </section>
-                </div>  
+                    <img id="print"
+                    src="images/print.jpg"
+                    alt="line of newsracks on street">
+                    <div class="wrapper-print">
+                        <h3>Print</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis vel repudiandae quos odit dolores in optio cumque, incidunt dolorem consectetur repellat voluptates debitis fugiat numquam sint architecto amet libero ab.</p>
+                            <div>
+                                <button id="print-plans" type="submit">Print Plans 
+                                <i class="fa-sharp fa-solid fa-play"></i></button>
+                            </div>   
+                    </div>       
                 
                 <!--vision needs a div with class bleed 3-->
                 <img id="vision"
@@ -130,24 +132,25 @@
                         <button id="our-vision" type="submit">Learn More 
                         <i class="fa-sharp fa-solid fa-play"></i></button>
                     </div>
-                
-                <div class="wrapper">    
-                    <section class="team">    
+                    
                         <h2 id="team">Our Team</h2>
                         <img id="john"
                         src="images/john.jpg"
                         alt="ceo and co-owner john">
-                        <h3>John Doe</h3>
-                        <h4>CEO and Co-Owner</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo maiores magni reiciendis sunt, similique, necessitatibus sapiente esse ut voluptates facilis at in! Veniam doloribus autem maiores perspiciatis perferendis soluta laboriosam!</p>
+                        <div class="wrapper-john">
+                            <h3>John Doe</h3>
+                            <h4>CEO and Co-Owner</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo maiores magni reiciendis sunt, similique, necessitatibus sapiente esse ut voluptates facilis at in! Veniam doloribus autem maiores perspiciatis perferendis soluta laboriosam!</p>
+                        </div>
+
                         <img id="bob"
                         src="images/bob.jpg"
                         alt="cfo and co-owner bob">
-
-                        <h3>Bob Rite</h3>
-                        <h4>CFO and Co-Owner</h4>
-                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur error facilis repudiandae eos repellat est enim vero perferendis quam. Rerum dolore mollitia incidunt laboriosam cum, quae tempora est facilis accusantium.</P>
-                    </section>
+                        <div class="wrapper-bob">
+                            <h3>Bob Rite</h3>
+                            <h4>CFO and Co-Owner</h4>
+                            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur error facilis repudiandae eos repellat est enim vero perferendis quam. Rerum dolore mollitia incidunt laboriosam cum, quae tempora est facilis accusantium.</P>
+                        </div>
 
                     <section class="contact">
                         <h2 id="contact">Contact Us</h2>

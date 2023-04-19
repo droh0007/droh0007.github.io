@@ -125,6 +125,13 @@ h3 {
 	padding: 20px;
 }
 
+h4 {
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px;
+	padding-left: 0;
+}
+
 .container-welcome {
 	position: relative;
 	max-width: 800px;

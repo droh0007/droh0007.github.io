@@ -123,6 +123,23 @@ h3 {
 	font-weight: bold;
 }
 
+.container-welcome {
+	position: relative;
+	max-width: 800px;
+	margin: 0 auto; 
+  }
+  
+  /* adds the semitransparent background and text w3, still needs to be centered*/
+  .container-welcome .content-welcome {
+	position: absolute; 
+	bottom: 0; 
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5); 
+	color: #f1f1f1;
+	width: 100%;
+	padding: 20px;
+  }
+
 /* adding style to the connect button */
   #connect {
 	background-color: #c78c06;
@@ -131,7 +148,7 @@ h3 {
     margin-top: 1em;
 	font-weight: 600;
 	border: none;
-	width: 200px;
+	width: 170px;
   }
 
   /* style for most of the buttons */
@@ -143,7 +160,7 @@ h3 {
     margin-top: 1em;
 	font-weight: 600;
 	border: none;
-	width: 200px;
+	width: 150px;
   }
 
   /* style just for the learn more button, border not working yet */
@@ -157,7 +174,18 @@ h3 {
 	border: #c78c06;
 	border: solid;
 	border-width: 1px;
-	width: 200px;
+	width: 150px;
+  }
+
+  /* adds style only to the final send button */
+  #send {
+	background-color: black;
+	color: #c78c06;
+    font-size: 1.2rem;
+	padding: 5px;
+	font-weight: 600;
+	border: none;
+	width: 70px;
   }
 
 /*theres now and outline and spacing on hours of operation sizing will be changed*/

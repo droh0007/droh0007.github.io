@@ -17,8 +17,6 @@
                 alt="logo of three stars">
             </h1>
         </header>
-        <!--header is for the banner-->
-        <header id="banner"></header>
     <!--navigation-->
         <nav>
             <ul>
@@ -34,14 +32,18 @@
         </nav>
         <!--main banner needs a div with a class of bleed-->
             <main>
-                <img id="main-banner"
-                src="images/main-banner.jpg"
-                alt="casual office space">
-                <h2>Welcome To Three Star Media</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eum accusantium distinctio ad maiores quos, iusto necessitatibus blanditiis quo dignissimos nam facilis, nisi illum ducimus fuga amet sed. Eaque, saepe?</p>
-            <div>
-                <button id="connect" type="submit">Connect with us</button>
-            </div>
+                <div class="container-welcome">
+                    <img id="main-banner"
+                    src="images/main-banner.jpg"
+                    alt="casual office space">
+                    <div class="content-welcome">
+                        <h2>Welcome To Three Star Media</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eum accusantium distinctio ad maiores quos, iusto necessitatibus blanditiis quo dignissimos nam facilis, nisi illum ducimus fuga amet sed. Eaque, saepe?</p>
+                        <div>
+                            <button id="connect" type="submit">Connect with us</button>
+                        </div>
+                    </div>
+                </div>
 
                 <!--About us needs a div with class bleed 2-->
                 <img id="about-us"
@@ -160,7 +162,7 @@
                             </div>
                         </div>
                             <div>
-                                <button type="submit">SEND</button>
+                                <button id="send" type="submit">Send</button>
                             </div>
                     </section>   
 

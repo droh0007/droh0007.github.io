@@ -86,10 +86,10 @@ nav li {
 	background: #c78c06;
   }
 /* changes how tall the search icon box, colour of icon */
-/*.fa-magnifying-glass {
+.fa-magnifying-glass {
 	height: 20px;
 	color: #c78c06;
-}*/
+}
 
 /*affects the position of the icon*/
 #search-button {
@@ -104,7 +104,16 @@ input {
 	width: 93%;
 	height: 30px;
 }
+/*
+.searchbutton {
+	background-color: black;
+	border: solid #c78c06;
+	width: min-content;
+} 
 
+.searchbutton .fa-solid {
+	color: #c78c06;
+}*/
 /*removeds underline from nav, chaned all link colours to mustard, black home still needed*/
 a:link { 
 	text-decoration: none;
@@ -131,6 +140,8 @@ a:link {
     width: 100%;
     height: 200px;
 	margin: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .wrapper-welcome {
@@ -139,6 +150,13 @@ a:link {
 	background-position: center;
 	height: 800px;
 	width: 760px;
+	padding-top: 260px;
+}
+
+.welcome-content {
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
 }
 
 .clear-banner {
@@ -150,6 +168,7 @@ a:link {
 	bottom: 50%;
 	width: 100%;
 	align-items: center;
+	justify-content: center;
 }
 
 img {
@@ -302,22 +321,30 @@ padding: 15px;
   /*more in my effort to even out cells not working*/
 table {
 	width: 100%;
-	border-spacing: 20px
+	border-spacing: 20px;
+	border-collapse: collapse;
+	max-width: 100%;
+	width: 98%;
 }
 
 /* alighns adds border and colour to the top of the table*/
 th {
 	text-align: center;
-	padding:10px;
 	background-color: #ffe6ac;
 	border: 1px solid;
+	padding-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
   }
 
   /*aligns to left adds border and spcaing*/
   td {
 	text-align: left;
-	padding:10px;
 	border: 1px solid;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 10px;
+	padding-bottom: 10px;
   }
 
   /*sets the size of the map*/
@@ -344,6 +371,8 @@ th {
 	.banner {
 		padding: 60px;
 		background: #222;
+		width: 100%;
+		height: 100px;
 	  }
 
 	  .header {
@@ -351,7 +380,26 @@ th {
 		align-items: center;
 		justify-content: center;
 	  }
-	  /*nav {
+	  nav ul {
+		list-style: none;
+		width: 100%;
+		display: flex;
+		padding: 0%;
+		margin: 0%;
+		text-align: center;
+		font-weight: 600;
+		font-size: 1rem;
+		color: black;
+	}
+	
+	nav li {
+		width: inherit;
+	}
+
+	.header {
+		display: flex;
+	}
+	    /*nav {
 		display: flex;
 		align-items: center;
 		justify-content: center;

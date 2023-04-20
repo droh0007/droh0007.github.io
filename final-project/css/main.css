@@ -79,9 +79,23 @@ nav li {
 }
 
 /* changes how tall the search icon box, colour of icon */
-.fa-magnifying-glass {
+/*.fa-magnifying-glass {
 	height: 20px;
 	color: #c78c06;
+}*/
+
+/*affects the position of the icon*/
+#search-button {
+    width: 10px;
+	height: 30px;
+	padding-top: 10px;
+	color: #c78c06;
+}
+
+/*lenghth and height of the search bar*/
+input {
+	width: 93%;
+	height: 30px;
 }
 
 /*removeds underline from nav, chaned all link colours to mustard, black home still needed*/
@@ -153,12 +167,12 @@ h4 {
 /* adding style to the connect button */
   #connect {
 	background-color: #c78c06;
-    font-size: 1rem;
-    padding: 1em;
+    font-size: 1.5rem;
+    padding: 1.5em;
     margin-top: 1em;
-	font-weight: 600;
+	font-weight: 400;
 	border: none;
-	width: 170px;
+	width: 250px;
   }
 
   /* lets me customize the play icon, needs to be beside, first needs to be orange, display inline-block dosen't work */
@@ -185,27 +199,41 @@ padding: 15px;
   #digital-plans , #marketing-plans , #video-plans , #web-plans , #print-plans {
 	background-color: black;
 	color: white;
-    font-size: 1rem;
-    padding: 1em;
+    font-size: 1.5rem;
+    padding: 1.5em;
     margin-top: 1em;
-	font-weight: 600;
+	font-weight: 400;
 	border: none;
-	width: 150px;
+	width: 250px;
 	margin-bottom: 15px;
+  }
+
+  /*set a container for the vision image*/
+  .container-img {
+	position: relative;
+	text-align: left;
+  }
+
+  /*postion vision content*/
+  .vision-content {
+	position: absolute;
+  	top: 70px;
+  	left: 16px;
+	color: white;
+	width: 90%;
   }
 
   /* style just for the learn more button, border not working yet */
   #our-vision {
 	background-color: rgba(0,0,0,.75);
 	color: white;
-    font-size: 1rem;
-    padding: 1em;
+    font-size: 1.5rem;
+    padding: 1.5em;
     margin-top: 1em;
-	font-weight: 600;
-	border: #c78c06;
-	border: solid;
+	font-weight: 400;
+	border: #c78c06 solid;
 	border-width: 1px;
-	width: 150px;
+	width: 210px;
 	margin-bottom: 15px;
   }
 
@@ -219,6 +247,17 @@ padding: 15px;
 		padding-top: 10px;
 	}
   
+	/*gives spacing between boxes*/
+	#urname , #email , #urmessage {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		padding: 5px;
+	}
+
+	/*makes the message box larger*/
+	#urmessage {
+		padding-bottom: 100px;
+	}
   /* adds style only to the final send button */
   #send {
 	background-color: black;
@@ -230,14 +269,6 @@ padding: 15px;
 	width: 70px;
 	margin-top: 20px;
   }
-
-/*theres now and outline and spacing on hours of operation sizing will be changed*/
-.hours {
-    outline-style: solid;
-    outline-width: thin;
-    padding: 1.5em;
-    margin: 0.75em;
-}
 
 /* trying to even out cells, not working */
 .table-info {
@@ -266,6 +297,12 @@ th {
 	border: 1px solid;
   }
 
+  /*sets the size of the map*/
+  iframe {
+    border:0;
+    width: 100%;
+    height:500px;
+}
   /*sets colour, background, and spacing of footer*/
   footer {
 	background-color: black;

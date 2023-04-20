@@ -32,7 +32,7 @@
                 <li><a href="#contact">Contact</a></li>
                 <li><input id="search" type="text" 
                 placeholder="Search"><button type="submit">
-                <i class="fa-solid fa-magnifying-glass"></i></button></li>
+                <i id="search-button" class="fa-solid fa-magnifying-glass"></i></button></li>
             </ul>
         </nav>
         <!--main banner needs a div with a class of bleed-->
@@ -123,15 +123,19 @@
                     </div>       
                 
                 <!--vision needs a div with class bleed 3-->
-                <img id="vision"
-                src="images/vision.jpg"
-                alt="surface with paperboats">
-                <h3>Our Vision</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, amet sed quos ratione repellat voluptate delectus deleniti exercitationem eveniet cumque atque magnam sunt dicta ad minus nam quibusdam ut mollitia!</p>
-                    <div>
-                        <button id="our-vision" type="submit">Learn More 
-                        <i class="fa-sharp fa-solid fa-play"></i></button>
+                <div class="container-img">
+                    <img id="vision"
+                    src="images/vision.jpg"
+                    alt="surface with paperboats">
+                    <div class="vision-content">
+                        <h3>Our Vision</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, amet sed quos ratione repellat voluptate delectus deleniti exercitationem eveniet cumque atque magnam sunt dicta ad minus nam quibusdam ut mollitia!</p>
+                            <div>
+                                <button id="our-vision" type="submit">Learn More 
+                                <i class="fa-sharp fa-solid fa-play"></i></button>
+                            </div>
                     </div>
+                </div>
                     
                         <h2 id="team">Our Team</h2>
                         <img id="john"
@@ -161,17 +165,17 @@
                         <h3>Send Us A Message</h3>
                         <div class="form">
                             <div>
-                                <label for="urname">Your Name</label>
+                                <label for="urname">Full Name</label>
                                 <input id="urname" name="yourname"
                                 type="text">
                             </div>
                             <div>
-                                <label for="email">Your Email</label>
+                                <label for="email">Email</label>
                                 <input id="email" name="youremail"
                                 type="text">
                             </div>
                             <div>
-                                <label for="urmessage">Your Message</label>
+                                <label for="urmessage">Message</label>
                                 <textarea id="urmessage" name="message"></textarea>
                             </div>
                         </div>

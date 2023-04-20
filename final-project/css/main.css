@@ -242,19 +242,16 @@ padding: 15px;
 	margin-bottom: 15px;
   }
 
-  /*set a container for the vision image*/
-  .container-img {
-	position: relative;
-	text-align: left;
-  }
-
   /*postion vision content*/
-  .vision-content {
-	position: absolute;
+  .wrapper-vision {
+	background-image: url(../images/vision.jpg);
+	background-size: cover;
   	top: 70px;
   	left: 16px;
 	color: white;
-	width: 90%;
+	width: 760px;
+	padding-left: 15px;
+	padding-right: 15px;
   }
 
   /* style just for the learn more button, border not working yet */

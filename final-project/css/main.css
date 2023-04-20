@@ -61,6 +61,11 @@ body {
 	font-size: 15px;
 }
 
+#logo {
+height: 80px;
+width: 80px;
+}
+
 nav {
     background-color: #222;
 	text-align: center;
@@ -76,7 +81,7 @@ nav li {
 	padding: 15px;
 }
 
-.header {
+.banner {
 	padding: 60px;
 	background: #c78c06;
   }
@@ -128,6 +133,30 @@ a:link {
 	margin: 10px;
 }
 
+.wrapper-welcome {
+	background-image: url(../images/main-banner.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 800px;
+	width: 760px;
+}
+
+.clear-banner {
+	/*position: relative;*/
+	color: white;
+	background-color: rgb(0, 0, 0, 0.5);
+	font-size: 1rem;
+	line-height: 1.5;
+	bottom: 50%;
+	width: 100%;
+	align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* not working yet, have to set rem? stil not bold enough*/
 h2 {
 	font-size: 50px;
@@ -149,32 +178,16 @@ h4 {
 	color: black;
 }
 
-.container-welcome {
-	position: relative;
-	max-width: 800px;
-	margin: 0 auto; 
-  }
-  
-  /* adds the semitransparent background and text w3, still needs to be centered*/
-  .container-welcome .content-welcome {
-	position: absolute; 
-	bottom: 0; 
-	background: rgb(0, 0, 0);
-	background: rgba(0, 0, 0, 0.5); 
-	color: #f1f1f1;
-	width: 100%;
-	padding: 20px;
-  }
-
 /* adding style to the connect button */
   #connect {
 	background-color: #c78c06;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 1.5em;
     margin-top: 1em;
 	font-weight: 400;
 	border: none;
-	width: 250px;
+	width: 200px;
+	text-align: left;
   }
 
   /* lets me customize the play icon, needs to be beside, first needs to be orange, display inline-block dosen't work */
@@ -260,8 +273,16 @@ padding: 15px;
 	#urmessage {
 		padding-bottom: 100px;
 	}
+
+	#send {
+		background-color: black;
+		color: #c78c06;
+		/* font-weight: 600; */
+		border: none;
+		padding: 40px 30px;
+	  }
   /* adds style only to the final send button */
-  #send {
+  /*#send {
 	background-color: black;
 	color: #c78c06;
     font-size: 1.2rem;
@@ -270,7 +291,7 @@ padding: 15px;
 	border: none;
 	width: 70px;
 	margin-top: 20px;
-  }
+  }*/
 
 /* trying to even out cells, not working */
 .table-info {
@@ -318,5 +339,24 @@ th {
 	padding: 10px;
   }
 
+  @media screen and (min-width:760px) {
 
+	.banner {
+		padding: 60px;
+		background: #222;
+	  }
+
+	  .header {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	  }
+	  /*nav {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-bottom: 50px;
+	  }*/
+
+  }
 

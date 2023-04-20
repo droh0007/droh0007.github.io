@@ -64,7 +64,7 @@ body {
 }
 
 nav {
-    background-color: black;
+    background-color: #222;
 	text-align: center;
 }
 
@@ -78,6 +78,10 @@ nav li {
 	padding: 15px;
 }
 
+.header {
+	padding: 60px;
+	background: #c78c06;
+  }
 /* changes how tall the search icon box, colour of icon */
 /*.fa-magnifying-glass {
 	height: 20px;

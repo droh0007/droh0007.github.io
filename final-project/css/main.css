@@ -142,7 +142,7 @@ a:link {
 	background-size: cover;
 	background-position: center;
 	height: 800px;
-	width: 760px;
+	max-width: 760px;
 	padding-top: 260px;
 	margin: auto;
 }
@@ -213,12 +213,12 @@ h4 {
 .wrapper-about-us {
 background-color: #ffe6ac;
 padding: 15px;
-width: 760px;
+max-width: 760px;
 margin: auto;
 }
 
 .wrapper-services {
-	width: 760px;
+	max-width: 760px;
 	margin: auto;
 }
 
@@ -249,7 +249,7 @@ margin: auto;
   	top: 70px;
   	left: 16px;
 	color: white;
-	width: 760px;
+	max-width: 760px;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin: auto;
@@ -280,12 +280,12 @@ margin: auto;
 	}
 
 	.wrapper-team {
-		width: 760px;
+		max-width: 760px;
 		margin: auto;
 	}
   
 	.wrapper-info {
-		width: 760px;
+		max-width: 760px;
 		margin: auto;
 	}
 	/*gives spacing between boxes*/
@@ -370,7 +370,7 @@ th {
 	color: #c78c06;
 	padding: 20px;
 	padding-left: 10px;
-	width: 760px;
+	max-width: 760px;
 	margin: auto;
   }
 

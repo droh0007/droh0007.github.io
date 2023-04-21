@@ -542,6 +542,39 @@ th {
 	  #bob { grid-area: pic2; }
 	  .wrapper-bob { grid-area: bob;}
 
+	  .wrapper-info {
+	
+		padding-left: 10%;
+		padding-right: 10%;
+		display: grid;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas:
+		"contact contact contact map map map"
+		"hoo hoo hoo hoo hoo hoo"
+		"hours hours hours hours hours hours"
+	  }
+
+	  /*#contact { grid-area: contact; } /*h2 Contact Us*/
+	  #message-us { grid-area: send-message; } /*h3 Send Us A Message*/
+	  #location { grid-area: location; } /* h2 Location*/
+	  .form { grid-area: form; } /*entire message form*/
+	  .map { grid-area: map; } /*google map*/
+	  #hoo { grid-area: hoo;} /*h2 Hours of Operation*/
+	  .hours { grid-area: hours;} /*table with hours*/
+	  .contact { grid-area: contact;}
+
+	  iframe {
+		width: 300px;
+		height: 400px;
+		margin: 0%;
+		padding: 0%;
+	}
+
+	.form {
+		margin: 0%;
+		padding: 0%;
+	}
+	  
 
   }
 

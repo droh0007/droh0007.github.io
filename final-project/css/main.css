@@ -160,6 +160,7 @@ img {
     max-width: 100%;
     height: auto;
 	width: 100%;
+	display: block;
 }
 
 /* not working yet, have to set rem? stil not bold enough*/
@@ -279,6 +280,7 @@ margin: auto;
 	.wrapper-info {
 		max-width: 760px;
 		margin: auto;
+		padding: 15px;
 	}
 	/*gives spacing between boxes*/
 	#urname , #email , #urmessage {
@@ -408,12 +410,48 @@ th {
 		max-width: 1200px;
 	  }
 
-	    /*nav {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		padding-bottom: 50px;
-	  }*/
+	  .wrapper-services {
+		padding-left: 10%;
+		padding-right: 10%;
+		display: grid;
+        grid-template-columns: repeat(6,1fr);
+		grid-gap: 10px;
+        grid-template-areas:
+		"services services . . . ."
+		"pic1 pic1 pic1 pic2 pic2 pic2"
+		"digital digital digital marketing marketing marketing"
+		"pic3 pic3 pic4 pic4 pic5 pic5"
+		"video video web web print print"
+	  }
+	  
+	  .wrapper-services h2 { grid-area: services; }
+	  #digital { grid-area: pic1; }
+	  .wrapper-digital { grid-area: digital; }
+	  #marketing { grid-area: pic2; }
+	  .wrapper-marketing { grid-area: marketing; }
+	  #video { grid-area: pic3; }
+	  .wrapper-video { grid-area: video; }
+	  #web { grid-area: pic4; }
+	  .wrapper-web { grid-area: web; }
+	  #print { grid-area: pic5;}
+	  .wrapper-print { grid-area: print; }
+
+	  .wrapper-team {
+		padding-left: 10%;
+		padding-right: 10%;
+		display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas:
+		"team team"
+		"pic1 john"
+		"bob pic2"
+	  }
+	  .wrapper-team h3 { grid-area: team; }
+	  #john { grid-area: pic1; }
+	  .wrapper-john { grid-area: john; }
+	  #bob { grid-area: pic2; }
+	  .wrapper-bob { grid-area: bob;}
+
 
   }
 

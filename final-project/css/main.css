@@ -144,6 +144,7 @@ a:link {
 	height: 800px;
 	width: 760px;
 	padding-top: 260px;
+	margin: auto;
 }
 
 .welcome-content {
@@ -212,6 +213,13 @@ h4 {
 .wrapper-about-us {
 background-color: #ffe6ac;
 padding: 15px;
+width: 760px;
+margin: auto;
+}
+
+.wrapper-services {
+	width: 760px;
+	margin: auto;
 }
 
 /*adds colour and spacing to most wrappers */
@@ -220,7 +228,6 @@ padding: 15px;
 	padding: 15px;
 	margin-bottom: 15px;
 	}
-
 
   /* style for most of the buttons */
   #digital-plans , #marketing-plans , #video-plans , #web-plans , #print-plans {
@@ -245,6 +252,7 @@ padding: 15px;
 	width: 760px;
 	padding-left: 15px;
 	padding-right: 15px;
+	margin: auto;
   }
 
   /* style just for the learn more button, border not working yet */
@@ -270,7 +278,16 @@ padding: 15px;
 	.wrapper-john p , .wrapper-bob p {
 		padding-top: 10px;
 	}
+
+	.wrapper-team {
+		width: 760px;
+		margin: auto;
+	}
   
+	.wrapper-info {
+		width: 760px;
+		margin: auto;
+	}
 	/*gives spacing between boxes*/
 	#urname , #email , #urmessage {
 		margin-top: 5px;
@@ -281,6 +298,9 @@ padding: 15px;
 	/*makes the message box larger*/
 	#urmessage {
 		padding-bottom: 100px;
+		padding-left: 0;
+		right: 90%;
+		
 	}
 
 	#send {
@@ -288,7 +308,8 @@ padding: 15px;
 		color: #c78c06;
 		/* font-weight: 600; */
 		border: none;
-		padding: 40px 30px;
+		padding: 10px 10px;
+		font-size: 1.3rem;
 	  }
   /* adds style only to the final send button */
   /*#send {
@@ -349,6 +370,8 @@ th {
 	color: #c78c06;
 	padding: 20px;
 	padding-left: 10px;
+	width: 760px;
+	margin: auto;
   }
 
   /*adds spacing between p*/

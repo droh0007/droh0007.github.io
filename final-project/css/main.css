@@ -57,6 +57,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: auto;
 	font-size: 15px;
+	line-height: 1.5;
 }
 
 nav {
@@ -97,17 +98,7 @@ input {
 	width: 93%;
 	height: 30px;
 }
-/*
-.searchbutton {
-	background-color: black;
-	border: solid #c78c06;
-	width: min-content;
-} 
 
-.searchbutton .fa-solid {
-	color: #c78c06;
-}*/
-/*removeds underline from nav, chaned all link colours to mustard, black home still needed*/
 a:link { 
 	text-decoration: none;
 	color: #c78c06; 
@@ -401,15 +392,21 @@ th {
 		font-weight: 600;
 		font-size: 1rem;
 		color: black;
-	}
-	
-	nav li {
-		width: inherit;
-	}
+	  }
 
-	.header {
+	  nav li {
+		width: inherit;
+	  }
+	
+	  .header {
 		display: flex;
-	}
+		max-width: 1200px;
+	  } 
+
+	  .wrapper-welcome , .wrapper-about-us , .wrapper-services , .wrapper-vision , .wrapper-team , .wrapper-info , footer{
+		max-width: 1200px;
+	  }
+
 	    /*nav {
 		display: flex;
 		align-items: center;

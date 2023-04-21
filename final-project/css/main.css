@@ -159,6 +159,7 @@ a:link {
 img {
     max-width: 100%;
     height: auto;
+	width: 100%;
 }
 
 /* not working yet, have to set rem? stil not bold enough*/

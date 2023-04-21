@@ -60,6 +60,11 @@ body {
 	line-height: 1.5;
 }
 
+li img {
+	width: 100px;
+	display: none;
+}
+
 nav {
     background-color: #222;
 	text-align: center;
@@ -76,13 +81,15 @@ nav li {
 }
 
 .banner {
-	padding: 60px;
+	padding: 80px;
 	background: #c78c06;
   }
+
 /* changes how tall the search icon box, colour of icon */
 .fa-magnifying-glass {
 	height: 20px;
 	color: #c78c06;
+	background-color: black;
 }
 
 /*affects the position of the icon*/
@@ -91,6 +98,7 @@ nav li {
 	height: 30px;
 	padding-top: 10px;
 	color: #c78c06;
+	background-color: black;
 }
 
 /*lenghth and height of the search bar*/
@@ -126,6 +134,10 @@ a:link {
 	margin: 10px;
 	padding-left: 15px;
 	padding-right: 15px;
+}
+ /* working on search flex still */
+li:last-child {
+	display: flex;
 }
 
 .wrapper-welcome {
@@ -223,11 +235,24 @@ margin: auto;
 	}
 
   /* style for most of the buttons */
-  #digital-plans , #marketing-plans , #video-plans , #web-plans , #print-plans {
+  #digital-plans , #video-plans , #web-plans , #print-plans {
 	background-color: black;
 	color: white;
     font-size: 1.5rem;
     padding: 1.5em;
+    margin-top: 1em;
+	font-weight: 400;
+	border: none;
+	width: 250px;
+	margin-bottom: 15px;
+  }
+/* marketing needed a little tweak to fit nicely */
+  #marketing-plans {
+	background-color: black;
+	color: white;
+    font-size: 1.5rem;
+    padding: 1.5em;
+	padding-right: 15px;
     margin-top: 1em;
 	font-weight: 400;
 	border: none;
@@ -287,14 +312,18 @@ margin: auto;
 		margin-top: 5px;
 		margin-bottom: 5px;
 		padding: 5px;
+		width: 45%;
 	}
 
 	/*makes the message box larger*/
 	#urmessage {
 		padding-bottom: 100px;
 		padding-left: 0;
-		right: 90%;
 		
+	}
+
+	#email {
+		margin-left: 25px;
 	}
 
 	#send {
@@ -379,10 +408,54 @@ th {
 		display: none;
 	  }
 
+	.logo {
+		display: none;
+	  }
+
+	  li {
+		padding: 0%;
+		margin: 0%;
+	  }
+
+	  li img {
+		display: block;
+	  }
+/* none of these options wirked unfortunatly, visited home link will be orange
+	  li:nth-child(2) {
+		color: black;
+		background-color: #c78c06;
+	  }
+
+	  a:link:nth-child(1) {
+		color: black;
+		background-color: #c78c06;
+	
+
+	  a:visited:first-child {
+		color: black;
+	  } */
+
+	  a:link {
+		color: #c78c06;
+	  }
+
+	  a:visited {
+		color: #c78c06;
+	  }
+
+	  li:nth-child(2) {
+		color: black;
+		background-color: #c78c06;
+	  }
+
 	  .header {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+	  }
+
+	  nav {
+		width: 100%;
 	  }
 
 	  nav ul {
@@ -405,6 +478,23 @@ th {
 		display: flex;
 		max-width: 1200px;
 	  } 
+
+	  .wrapper-about-us {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+	  }
+
+	  #about-us {
+		max-width: 45%;
+		height: auto;
+		width: auto;
+	  }
+
+	  #about-content {
+		max-width: 45%;
+		padding-left: 10px;
+	  }
 
 	  .wrapper-welcome , .wrapper-about-us , .wrapper-services , .wrapper-vision , .wrapper-team , .wrapper-info , footer{
 		max-width: 1200px;
